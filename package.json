@@ -1,0 +1,21 @@
+{
+  "name": "claim-rules-coverage",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Two claim-review rules of a health-insurance reimbursement workflow, with Vitest tests and V8 coverage.",
+  "type": "module",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "pretest": "node check-node.mjs",
+    "test": "vitest run",
+    "precoverage": "node check-node.mjs",
+    "coverage": "vitest run --coverage"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "4.1.11",
+    "vite": "8.3.0",
+    "vitest": "4.1.11"
+  }
+}
