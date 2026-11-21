@@ -51,5 +51,6 @@ All files          |   82.22 |    71.87 |     100 |   89.18 |
 -------------------|---------|----------|---------|---------|-------------------
 ```
 
-A branch percentage below 100 means that some outcome of a decision is not exercised by any test. The last column lists
+A branch percentage below 100 means that the tests missed at least one item the tool counts as a branch: an outcome of a
+decision, a side of `&&` or `||` that was never evaluated, or a default parameter that was never used. The last column lists
 the lines that no test runs; the HTML report marks the branches not taken in each file.
