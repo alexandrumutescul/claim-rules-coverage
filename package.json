@@ -11,7 +11,8 @@
     "pretest": "node check-node.mjs",
     "test": "vitest run",
     "precoverage": "node check-node.mjs",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "postcoverage": "node align-report-headings.mjs"
   },
   "devDependencies": {
     "@vitest/coverage-v8": "4.1.11",

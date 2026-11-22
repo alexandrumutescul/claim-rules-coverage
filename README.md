@@ -36,8 +36,9 @@ npm versions print an `install-scripts` warning about `fsevents`; it needs no ac
 
 ## Coverage
 
-`npm run coverage` prints a text table 80 columns wide and writes an HTML report to `coverage/index.html`. With the five
-tests included, measured with Node.js 24.12.0 on 2026-11-21:
+`npm run coverage` prints a text table 80 columns wide and writes an HTML report to `coverage/index.html`; its last
+step, `align-report-headings.mjs`, puts each column heading of the HTML report over its numbers. With the five tests
+included, measured with Node.js 24.12.0 on 2026-11-21:
 
 <!-- prettier-ignore -->
 ```text
